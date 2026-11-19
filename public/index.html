@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>servidor de mensagens</title>
+    <script type="module" src="./app.js"></script>
+</head>
+<body>
+    <main>
+    <header>
+        <div>
+            <h1>Mensageiro Local</h1>
+            <p>Mensagens compartilhadas na rede do laboratorio</p>
+        </div>
+        <span id="conexao">conectando</span>
+    </header>
+    <section class="container" aria-label="Mensagens">
+            <ul id="mensagens"></ul><section></section>
+    </section>
+    <form id="formulario">
+      <label>Seu nome<input id="usuario" type="text" maxlength="40" placeholder="Ex.: Ana" required autocomplete="nickname" /></label>
+      <label>Mensagem<input id="texto" type="text" maxlength="500" placeholder="Escreva aqui..." required /></label>
+      <button type="submit" id="enviar">Enviar </button>
+    </form>
+    <p id="aviso" role="status" aria-live="polite"></p>
+    <footer>Atualização automática a cada 3 segundos • Uso exclusivo da rede local</footer>
+  </main>
+</body>
+</html>
